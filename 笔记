@@ -1,0 +1,45 @@
+mongodb的安装 安装包放在/root下面
+tar -zxvf mongodb-linux-x86_64-4.0.1.tgz
+mv mongodb-linux-x86_64-4.0.1 /usr/local/mongodb-4.0.1
+cd /usr/local/mongodb-4.0.1
+mkdir -p  ./data/db
+mkdir -p ./logs
+
+--创建配置文件
+进入bin目录下：cd  /opt/mongodb-4.0.1/bin,创建mongodb.conf配置文件：vim mongodb.conf
+会提示是new file，直接输入下面内容：
+dbpath = /usr/local/mongodb-4.0.1/data/db #数据文件存放目录
+logpath = /usr/local/mongodb-4.0.1/logs/mongodb.log #日志文件存放目录
+port = 27017 #端口
+fork = true #以守护程序的方式启用，即在后台运行
+#auth=true #需要认证。如果放开注释，就必须创建MongoDB的账号，使用账号与密码才可远程访问，第一次安装建议注释
+bind_ip=0.0.0.0 #允许远程访问，或者直接注释，127.0.0.1是只允许本地访问
+然后保存退出
+启动MongoDB服务：
+进入bin目录下：cd  /usr/local/mongodb-4.0.1/bin
+加载配置文件方式启动：./mongod  -f  /usr/local/mongodb-4.0.1/mongodb.conf
+---------------------安装完毕-------------------------------------
+查看端口映射检查是否启动成功：netstat -nltp|grep mongod
+
+关闭mongodb服务：
+方案一：
+./mongod  --shutdown  ，mongod 命令的 shutdown 选项能干净的关闭 MongoDB 服务,
+ 会释放内存中MongoDB占用的内存
+ 方案二：
+ 也可以直接杀掉进程：
+ kill进程：kill MongoDB的pid  ，直接杀死MongoDB的进程id。kill  -9  pid 强制杀死，
+ 有时可能会出现错误关不掉时就可使用这种强制方式，但注意这种方式可能并不会马上释放内存
+ 中MongoDB占用的内存，且如果这时候有数据往MongoDB新增可能会导致数据丢失。
+ 注：查看pid：ps -ef | grep mongo ， 结果的第二列就是pid
+
+创建MongoDB的账号：
+进入bin目录下： cd  /opt/mongodb-4.0.1/bin，运行mongo命令：./mongo
+使用admin数据库：use admin  ，注意admin数据库下创建的账号权限是所有库通用的，即是全局认证的。
+创建用户：db.createUser({ user: 'root', pwd: 'root',roles: [ { role: "dbOwner", db: "test" }] });
+这时候MongoDB的admin数据库就有了账号，启用auth=true，重启后，再连接就需要账号密码授权了.
+
+
+
+
+
+

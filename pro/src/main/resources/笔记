@@ -1,0 +1,331 @@
+在对一个类的属性赋值的时候，可以通过切面的方式来对注入的值的合理性进行校验：
+需要的步骤为：
+第一步：创建一个自定义的异常类，需要继承RuntimeException,
+       并定义对应的属性(用来封装异常信息)
+       eg：
+       @Data
+       @NoArgsConstructor
+       public class UserException extends  RuntimeException {
+
+          private String errorField;
+          private String errorValue;
+           public UserException(String errorField, String errorValue,String message) {
+               super(message);
+               this.errorField = errorField;
+               this.errorValue = errorValue;
+           }
+       }
+第二步：编写对应的校验方法(建议写在工具类中，使用静态方法)，重点是校验的对象不符合要求的时候，
+        需要抛出对应的异常即可。
+        eg：
+        public class ValidataUtil {
+        private static final String [] INVALIDATA_NAME={"admin","admins","root","manage"};
+
+        public static void CheckName(String userName){
+            Stream.of(INVALIDATA_NAME).filter(name ->userName.equalsIgnoreCase(name))
+                    .findAny()
+                    .ifPresent(names ->{
+                    //抛出异常，供对应的异常处理器捕获
+                        throw new UserException("name",names,"使用了非法的用户名");
+                    });
+        }
+第三步：重点就在这个地方，需要对第二步抛出的异常进行捕获，
+     此处需要用到的注解有两个@ControllerAdvice和@ExceptionHandler
+    需要做的有两点：
+    ①自定义一个异常捕获类，并使用@ControllerAdvice来修饰(声明为全局异常处理)
+    注：@ControllerAdvice注解可以实现三方面的功能 1.全局异常处理  2.全局数据绑定 3.全局数据预处理
+    在此处，@ControllerAdvice的作用是全局异常处理.
+    @ExceptionHandler：作用于Controller级别，为一个Controller定义一个异常处理器。作用层面是类内部
+    当@ExceptionHandler修饰的方法所在的类使用@ControllerAdvice修饰，则这个异常处理器则转变为全局的，
+    但是有优先级的限制，如果抛出异常的类也有同类的异常处理器，则优先调用本类中的处理器。
+    eg:
+       @ControllerAdvice//使用@ControllerAdvice说明是全局异常处理
+       public class ExceptionHandleAdvice {
+           }
+    ②在定义好的全局异常处理类中，定义一个异常处理器(使用@ExceptionHandler修饰)，然后编写对应的方法体，
+    即可对异常进行捕获处理。
+    eg:
+       @ControllerAdvice
+       public class ExceptionHandleAdvice {
+           //使用@ExceptionHandler修饰，说明是一个异常处理器，value = UserException.class指出了处理哪些类型的异常
+           @ExceptionHandler(value = UserException.class)
+           public ResponseEntity<String> exHandle(UserException ex){
+               String errorField = ex.getErrorField();
+               String errorValue = ex.getErrorValue();
+               String msg = ex.getMessage();
+               String es = msg+"【"+errorField+":"+errorValue+"】";
+               return new ResponseEntity<String>(es, HttpStatus.NOT_FOUND);
+           }
+           }
+       到此为止，全局异常处理和异常处理器定义完毕。
+
+
+
+linux相关查询命令
+ps aux | grep  nginx  查看进程
+也可使用 ps -ef | grep nginx
+其中，nginx是对应的应用名称
+netstat -tunlp 查看所有运行进程的ip等情况
+
+
+反向代理服务器nginx相关内容：
+准备工作：
+安装环境相关步骤：
+yum install -y gcc-c++ gcc
+yum -y install openssl openssl-devel
+压缩包下载：wget http://nginx.org/download/nginx-1.16.1.tar.gz
+解压：tar -zxf nginx-1.16.1.tar.gz
+存放的路径为：/usr/local目录下
+安装https模块(在解压之后的nginx目录下执行)：
+./configure --prefix=/usr/local/nginx --with-http_ssl_module
+然后执行编译操作 指令为：make
+编译之后，进行安装 make install
+设置软链接，可以在任何目录下运行nginx命令
+指令为：ln -n /usr/local/nginx/sbin/nginx  /usr/local/sbin/
+
+
+
+fastdfs相关知识
+下载资源文件
+1）.libfastcommonV1.0.7.tar.gz libfastcommon是FastDFS官方提供的，libfastcommon包含了FastDFS运行所需要的一些基础库。
+下载地址：https://pan.baidu.com/s/1o36R7IC_4WgroWTC-aNboA 提取码: h991
+2）.FastDFS_v5.05.tar.gz 下载地址：https://pan.baidu.com/s/1SFKhxJ6PuwVRS-WuuGhYEA 提取码: yuvy
+3）.fastdfs-nginx-module_v1.16.tar(1).gz 下载地址：https://pan.baidu.com/s/1TFfztvA6dFoQTTGK3PWzRg 提取码: 1tkm
+下载好了之后，将这几个安装包上传到Linux系统中，准备工作就差不多了！下面我们开始安装
+
+
+多线程相关知识总结
+
+进程和线程
+进程：一个正在执行的程序。
+线程：进程中的一个独立的控制单元。
+线程的生命周期：新建、就绪、运行、阻塞\等待\睡眠、终止
+新建：从新建一个线程对象到程序start()调用之间。
+就绪：线程对象调用start()方法之后，处于就绪状态，等待jvm的线程调度器来调度。
+运行：就绪状态下的线程在获取到cpu资源(时间片)之后，执行run()，此使线程处于运行状态，运行状态的线程可以变为就绪、阻塞、死亡状态
+等待/阻塞/睡眠状态：线程调用sleep(睡眠),suspend(挂起)等方法之后，会失去所占有的资源(时间片)，进入阻塞状态
+终止:在执行完run()方法之后或者是发生其他终止条件时，会进入终止状态
+
+创建线程的方法
+1.继承thread类，重写run()方法，调用start()启动线程
+2.定义一个A类，实现Runnable接口，重写run()方法(run方法通过abstract修饰，所以继承者需要重写run方法而不是实现run方法)，
+  创建一个Thread类，并将A类的实例作为参数传入Thread的构造方法，然后调用thread的start方法(在调用start方法之后，会调用run方法，而在thread类的
+  run方法中，会去判断Runnable是否为空，如果不为空，则调用其run方法)。
+3.通过callable接口和FutureTask类实现。
+  定义一个B类，实现Callable接口，重写call()方法，然后创建一个FutureTask类，将B类的实例作为参数传入到FutureTask的构造方法中，由于FutureTask实现了Runnable接口，
+  所以就是Runnable类的实例，可以使用Thread类的方式开启线程，然后调用TaskFuture的get方法来获取返回结果，得到对应的返回值。
+  Callable接口的call方法是有返回值的。FutureTask类实现了Runnable接口和Future接口，在FutureTask的run方法中，会调用Callable实例的call方法。
+  流程分析：将FutureTask类的实例传入到Thread类的构造方法之后，调用start方法，然后会出发FutureTask类的run方法，run方法中，
+  又调用了Future创建时传入的Callable接口实例的call方法，并使用set方法将结果进行保存，之后，FutureTask类调用get方法的时候，
+  返回set方法保存的返回值。
+  注：整体流程其实还是相当于thread调用start，start触发run方法，run方法中调用call方法，并保存call方法的返回值，然后get方法返回值进行返回。
+
+对创建线程的方法进行对比
+  继承Thread类、实现Runnable接口、实现Callable接口的比较
+  ①继承Thread类方法：
+  优点：流程简单，只需要重写run方法即可实现。
+  缺点：java是单继承，一个类继承了Thread类之后，无法直接继承别的类，扩展性不好。
+  ②实现Runnable接口的方式：
+  优点：避免了单继承的局限，多个线程共享一个target对象，适合多个线程处理同一份资源。
+  缺点：编写步骤繁琐，无返回值，访问线程必须使用Thread.currentThread方法
+  ③实现Callable接口的方式：
+  优点：有返回值，避免了单继承的局限，多个线程可以共享一个target对象，适合多个线程处理同一份资源。
+  缺点：比较复杂，访问线程必须使用Thread.currentThread方法。
+
+线程的状态管理
+ ①线程睡眠(sleep)，源码解释：he thread  does not lose ownership of any monitors.(线程不会丢掉任何监视器的所有权即：不会释放掉锁)
+   线程在调用sleep方法之后，线程会进入阻塞状态，时间结束之后，会进入到就绪状态，等待线程调度器分配资源(时间片)。但是此时的线程并没有释放锁。
+ ②线程让步(yield),
+   线程调用yield方法之后，会直接进入就绪状态，等待线程调度器分配资源，此使线程没有释放锁。
+ ③线程合并(join)
+   线程b执行到了线程a的join方法的时候，b线程进入等待状态，让线程a都执行完毕，然后b线程才会执行，join可以用来临时加入线程操作
+   join方法的主要作用是同步，它使得线程之间的并行执行变成了串行执行。它会迫使调用该线程的线程放弃锁(join方法中调用了wait方法)。
+ ④线程等待wait(Object的方法)
+   当一个线程调用wait方法，它就进入一个和该对象相关的等待池中，同时释放了锁对象。必须使用notify或者是notifyAll方法进行唤醒。此唤醒是随机唤醒，
+   若被其他线程抢到了cpu的执行权，则该线程还会继续等待。
+   wait(long timeout)让当前线程处于“等待(阻塞)状态”，“直到其他线程调用此对象的notify()方法或 notifyAll() 方法，
+   或者超过指定的时间量”，当前线程被唤醒(进入“就绪状态”)
+ ⑤锁池和等待池(每个对象都有)
+ Java平台中，因为有内置锁的机制，每个对象都可以承担锁的功能。Java虚拟机会为每个对象维护两个“队列”（姑且称之为“队列”，
+ 尽管它不一定符合数据结构上队列的“先进先出”原则）：一个叫Entry Set（入口集），另外一个叫Wait Set（等待集）。
+ 对于任意的对象objectX，objectX的Entry Set用于存储等待获取objectX这个锁的所有线程，也就是传说中的锁池，
+ objectX的Wait Set用于存储执行了objectX.wait()/wait(long)的线程，也就是等待池
+
+ 当对象调用wait方法的时候，会进入等待池中。
+ 当对象调用notify或者是notifyAll的时候，会将所有等待池中的线程
+
+Volatile 变量具有 synchronized 的可见性特性，但是不具备原子性。这就是说线程能够自动发现 volatile 变量的最新值。
+
+线程池
+线程池的定义：线程的集合,线程池可以使已经开启的线程长期处于激活状态，节省创建和销毁线程的时间，实现线程复用。
+线程池的分类（底层都是根据ThreadPoolExecutor创建）：
+架构体系Executor(i)->ExecutorService(i)->AbstractExecutorService(A)->ThreadPoolExecutor(c)
+常用的java线程池有：
+newCachedThreadPool:创建一个可以缓存的线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收则新建线程。
+
+newFixedThreadPool:创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列里等待。
+                   定长线程池的大小最好根据系统资源进行设置。如Runtime.getRuntime().availableProcessors()
+
+newSingleThreadExecutor: 创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有的任务按照指定的顺序(FIFO,FILO,优先级等)执行。
+
+NewScheduledThreadPool:创建一个定长线程池，支持定时及周期性任务执行。
+
+
+
+
+java基础知识总结
+两大类接口 collection类接口和map接口
+map接口常用的有hashMap  hashTable linkedHashMap TreeMap等
+collection接口常用的有 list和set
+list中常用的是arraylist  linklist vector等
+set中常用的是 hashset  linkedhashset  treeset
+先说map接口的特性
+hashmap:继承AbstractMap并实现了map接口.
+其中重要的方法是get  put
+其中put方法的使用：在Hashmap中，有一个Node链表(单向链表，只有下一个元素的引用，没有上一个元素的引用)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java中的List Set Map
+List
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
