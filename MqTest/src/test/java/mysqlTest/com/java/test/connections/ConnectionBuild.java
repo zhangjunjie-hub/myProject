@@ -1,4 +1,4 @@
-package mqtest.com.java.test.connections;
+package mysqlTest.com.java.test.connections;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
