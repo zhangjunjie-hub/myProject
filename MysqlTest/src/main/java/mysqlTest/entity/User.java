@@ -1,4 +1,4 @@
-package mqtest.entity;
+package mysqlTest.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,10 +9,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class OrderSuccessMessage {
-    private String msgCode;
-    private String msgContent;
-    private String msgStatus;
-
-
+public class User {
+    private String userName;
+    private String address;
+    private int age;
 }

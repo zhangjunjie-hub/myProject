@@ -1,4 +1,4 @@
-package mqtest.config;
+package mysqlTest.config;
 
 import org.apache.commons.lang.StringUtils;
 import org.springframework.amqp.core.AmqpAdmin;

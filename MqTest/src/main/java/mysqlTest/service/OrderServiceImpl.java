@@ -1,7 +1,6 @@
-package mqtest.service;
+package mysqlTest.service;
 
-import mqtest.config.RabbitConfig;
-import mqtest.entity.OrderSuccessMessage;
+import mysqlTest.entity.OrderSuccessMessage;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

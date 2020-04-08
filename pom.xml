@@ -16,6 +16,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>quartzModule</module>
+        <module>mysqlTest</module>
+        <module>MySqlTest</module>
     </modules>
     <dependencies>
         <dependency>
