@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c9d30a6-e742-40fe-b03b-ba540d0beef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/UserMapper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/test/java/mysqlTest/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MysqlTest/src/test/java/mysqlTest/DemoApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/src/main/java/com/java/main/entity/DuridBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/target/classes/com/main/QuartzApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/target/classes/com/main/bean/AppQuartz.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/target/classes/com/main/job/TestJob.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/target/classes/com/main/scheduler/MyScheduler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/target/classes/quartz.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quartzModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7c9d30a6-e742-40fe-b03b-ba540d0beef3" name="Default Changelist" comment="springBoot定时任务创建">
+      <change afterPath="$PROJECT_DIR$/bio/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bio/src/main/java/com/java/bid/service/BioService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MqTest/src/main/java/mqtest/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MqTest/src/main/java/mysqlTest/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MqTest/src/main/java/mqtest/config/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/MqTest/src/main/java/mysqlTest/config/RabbitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MqTest/src/main/java/mqtest/entity/OrderSuccessMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/MqTest/src/main/java/mysqlTest/entity/OrderSuccessMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MqTest/src/main/java/mqtest/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/MqTest/src/main/java/mysqlTest/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MqTest/src/test/java/mqtest/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/MqTest/src/test/java/mysqlTest/DemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MqTest/src/test/java/mqtest/com/java/test/connections/ConnectionBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/MqTest/src/test/java/mysqlTest/com/java/test/connections/ConnectionBuild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartzModule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/quartzModule/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartzModule/src/main/java/com/main/scheduler/MyScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/quartzModule/src/main/java/com/main/scheduler/MyScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quartzModule/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/quartzModule/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="db4d9a18-d50a-4a5c-a76a-9f7b19359fb6" name="ignorList" comment="">
       <change afterPath="$PROJECT_DIR$/quartzModule/quartzModule.iml" afterDir="false" />
@@ -59,6 +31,7 @@
     <ignored path="$PROJECT_DIR$/MqTest/target/" />
     <ignored path="$PROJECT_DIR$/quartzModule/target/" />
     <ignored path="$PROJECT_DIR$/mysqlTest/target/" />
+    <ignored path="$PROJECT_DIR$/bio/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,49 +74,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1472">
-              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/src/test/java/mysqlTest/DemoApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/src/test/java/mysqlTest/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/bio/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/UserMapper">
+        <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/bid/service/BioService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,25 +91,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/DemoApplication.java">
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/io/BufferedReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="89">
+              <caret line="390" column="18" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/io/InputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="112" column="30" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MysqlTest/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/net/ServerSocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-21771">
+              <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -189,6 +133,7 @@
       <find>putVal</find>
       <find>[]</find>
       <find>putv</find>
+      <find>read</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mongo/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pro/src/main/java/com/web11/pro/ProApplication.java" />
         <option value="$PROJECT_DIR$/pro/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/bean/User.java" />
@@ -252,6 +196,7 @@
         <option value="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/TestDao.java" />
         <option value="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/UserDao.java" />
         <option value="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/UserMapper" />
+        <option value="$PROJECT_DIR$/bio/src/main/java/com/java/bid/service/BioService.java" />
       </list>
     </option>
   </component>
@@ -292,6 +237,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,112 +249,42 @@
             <path>
               <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
               <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
               <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
               <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
               <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysqlTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
               <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mappers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mysqlTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="quartzModule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="quartzModule" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="quartzModule" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
-              <item name="quartzModule" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -459,7 +336,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.QuartzApplication">
+  <component name="RunManager" selected="Application.BioService">
+    <configuration name="BioService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.bid.service.BioService" />
+      <module name="bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.bid.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConnectionBuild" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mysqlTest.com.java.test.connections.ConnectionBuild" />
       <module name="MqTest" />
@@ -526,19 +416,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mongo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mongo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mongo.MongoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MongoApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mongo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mongo.mongo.MongoApplication" />
@@ -576,11 +453,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BioService" />
         <item itemvalue="Application.ConnectionBuild" />
         <item itemvalue="Application.DemoTest" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.VTest" />
-        <item itemvalue="Spring Boot.MongoApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -616,7 +493,8 @@
       <workItem from="1579100710727" duration="6975000" />
       <workItem from="1579587181200" duration="2920000" />
       <workItem from="1581152384022" duration="5016000" />
-      <workItem from="1586356253504" duration="62000" />
+      <workItem from="1586356253504" duration="448000" />
+      <workItem from="1586699730089" duration="4366000" />
     </task>
     <task id="LOCAL-00001" summary="新添加项目">
       <created>1576598628130</created>
@@ -730,11 +608,25 @@
       <option name="project" value="LOCAL" />
       <updated>1579588546657</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="springBoot定时任务创建">
+      <created>1586356360381</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586356360382</updated>
+    </task>
+    <task id="LOCAL-00018" summary="springBoot定时任务创建">
+      <created>1586356394471</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1586356394471</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117319000" />
+    <option name="totallyTimeSpent" value="122071000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -749,7 +641,7 @@
     <frame x="-8" y="-8" width="1296" height="696" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23581848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23987034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -759,8 +651,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.45948136" weight="0.15384616" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45974955" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.45948136" visible="true" weight="0.33989266" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.066189624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32976827" />
@@ -882,57 +774,11 @@
     <MESSAGE value="springBoot定时任务创建" />
     <option name="LAST_COMMIT_MESSAGE" value="springBoot定时任务创建" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/util/HashMap.java</url>
-          <line>622</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mongo/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MqTest/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MqTest/src/test/java/mysqlTest/com/java/test/connections/ConnectionBuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/src/main/resources/笔记">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="180" column="33" selection-end-line="331" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0e37e18b-22ff-4660-a049-2becd4f14c31/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1002,23 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="11" column="59" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="622" selection-start-line="622" selection-end-line="622" />
-          <folding>
-            <element signature="e#19228#19229#0" expanded="true" />
-            <element signature="e#19311#19312#0" expanded="true" />
-            <element signature="e#21005#21006#0" expanded="true" />
-            <element signature="e#21032#21033#0" expanded="true" />
-            <element signature="e#24218#24219#0" expanded="true" />
-            <element signature="e#24283#24284#0" expanded="true" />
-            <element signature="e#68598#68599#0" expanded="true" />
-            <element signature="e#68655#68656#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1281,7 +1110,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="230">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1309,6 +1138,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bio/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/net/ServerSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21771">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="112" column="30" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="622" selection-start-line="622" selection-end-line="622" />
+          <folding>
+            <element signature="e#19228#19229#0" expanded="true" />
+            <element signature="e#19311#19312#0" expanded="true" />
+            <element signature="e#21005#21006#0" expanded="true" />
+            <element signature="e#21032#21033#0" expanded="true" />
+            <element signature="e#24218#24219#0" expanded="true" />
+            <element signature="e#24283#24284#0" expanded="true" />
+            <element signature="e#68598#68599#0" expanded="true" />
+            <element signature="e#68655#68656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="390" column="18" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/bid/service/BioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
