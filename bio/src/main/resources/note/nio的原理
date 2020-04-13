@@ -1,0 +1,13 @@
+nio的三个基本组件：
+buffer(缓冲区)、channel(管道)、selector(选择器)
+buffer：数据缓冲区，是双向的，八种基本数据类型，除了boolean没有对应的buffer，其他的类型都有对应的buffer，
+        buffer是双向通道，在客户端访问服务器的时候，讲数据写入到buffer中，selecter通过channel读取到buffer中的
+        数据，然后处理对应的请求。当服务器返回数据的时候，selecter通过channel将数据写入到buffer中，然后客户端
+        读取buffer中的数据，解析并显示。buffer的读写读写是双向的，读写切换需要使用filp方法来完成。buffer是一个
+        内存块，底层是一个数组。
+channel：读取或者写入数据到buffer的管道，每个channel都会对应一个buffer。channel是双向的，读取buffer或者写入
+        buffer数据。
+selector：处理请求的选择器，在nio中，一个线程对应多个channel(管道、连接)，一个selector对应服务器的一个处理线程，一个channel有多个渠道(一个客户端请求
+        对应的是一个渠道)，这里和bio形成了对比，bio中是一个客户端请求对应着一个服务器线程，而且bio中这个线程是
+        阻塞的。selector处于监听状态，如果channel活动(事件驱动event)，selector会切换到该channel处理。selecter
+        根据不同的事件，在各个通道上切换。
