@@ -6,22 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mongo" />
+        <module name="quartzModule" />
+        <module name="bio" />
+        <module name="demo" />
         <module name="pro" />
+        <module name="mongo" />
         <module name="webflux" />
-        <module name="rootParent" />
         <module name="MqTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="MySqlTest" target="1.8" />
+      <module name="mysqlTest" target="1.8" />
       <module name="webProject" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MqTest" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="mongo" options="-parameters" />
       <module name="pro" options="-parameters" />
+      <module name="quartzModule" options="-parameters" />
       <module name="webProject" options="-parameters" />
       <module name="webflux" options="-parameters" />
     </option>
