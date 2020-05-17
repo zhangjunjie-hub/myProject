@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c9d30a6-e742-40fe-b03b-ba540d0beef3" name="Default Changelist" comment="">
+    <list default="true" id="7c9d30a6-e742-40fe-b03b-ba540d0beef3" name="Default Changelist" comment="nio的三个核心组件">
+      <change afterPath="$PROJECT_DIR$/bio/src/main/java/com/java/nio/source/ServerSocketChannelTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/BasicBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/BasicBuffer.java" afterDir="false" />
     </list>
     <list id="db4d9a18-d50a-4a5c-a76a-9f7b19359fb6" name="ignorList" comment="">
-      <change afterPath="$PROJECT_DIR$/quartzModule/quartzModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gitattributes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/MysqlTest/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/MysqlTest/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/MysqlTest/mvnw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/MysqlTest/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rootParent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rootParent.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rootParent-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,14 +71,112 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/bid/service/BioService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/bio/service/BioService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="77" column="37" lean-forward="true" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+            <state relative-caret-position="1426">
+              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/NioService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/BasicBuffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/nio/source/ServerSocketChannelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/net/SocketAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/net/InetSocketAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/nio/channels/ServerSocketChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1150">
+              <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/sun/nio/ch/ServerSocketChannelImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1794">
+              <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bio/src/main/resources/note/nio的原理">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/nio/IntBuffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5819">
+              <caret line="278" column="25" selection-start-line="278" selection-start-column="23" selection-end-line="278" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/nio/Buffer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3473">
+              <caret line="179" column="2" selection-start-line="179" selection-start-column="2" selection-end-line="179" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -143,11 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pro/src/main/java/com/web11/pro/ProApplication.java" />
-        <option value="$PROJECT_DIR$/pro/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/bean/User.java" />
-        <option value="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/dao/UserRepository.java" />
-        <option value="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/WebfluxApplication.java" />
         <option value="$PROJECT_DIR$/webflux/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/controller/UserController.java" />
         <option value="$PROJECT_DIR$/pro/src/main/java/com/web11/pro/bean/User.java" />
@@ -194,6 +283,11 @@
         <option value="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/UserDao.java" />
         <option value="$PROJECT_DIR$/MysqlTest/src/main/java/mysqlTest/mappers/UserMapper" />
         <option value="$PROJECT_DIR$/bio/src/main/java/com/java/bid/service/BioService.java" />
+        <option value="$PROJECT_DIR$/bio/src/main/java/com/java/bio/service/BioService.java" />
+        <option value="$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/NioService.java" />
+        <option value="$PROJECT_DIR$/bio/src/main/resources/note/nio的原理" />
+        <option value="$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/BasicBuffer.java" />
+        <option value="$PROJECT_DIR$/bio/src/main/java/com/java/nio/source/ServerSocketChannelTest.java" />
       </list>
     </option>
   </component>
@@ -274,14 +368,31 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rootParent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rootParent" type="462c0819:PsiDirectoryNode" />
+              <item name="bio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,7 +444,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BioService">
+  <component name="RunManager" selected="Application.BasicBuffer">
+    <configuration name="BasicBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.java.nio.service.BasicBuffer" />
+      <module name="bio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.nio.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BioService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.java.bid.service.BioService" />
       <module name="bio" />
@@ -375,19 +499,6 @@
     </configuration>
     <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.web11.pro.MainTest" />
-      <module name="pro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.web11.pro.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.web11.pro.VTest" />
       <module name="pro" />
       <extension name="coverage">
         <pattern>
@@ -450,11 +561,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BasicBuffer" />
         <item itemvalue="Application.BioService" />
         <item itemvalue="Application.ConnectionBuild" />
         <item itemvalue="Application.DemoTest" />
         <item itemvalue="Application.MainTest" />
-        <item itemvalue="Application.VTest" />
       </list>
     </recent_temporary>
   </component>
@@ -492,7 +603,9 @@
       <workItem from="1581152384022" duration="5016000" />
       <workItem from="1586356253504" duration="448000" />
       <workItem from="1586699730089" duration="4683000" />
-      <workItem from="1586782459092" duration="422000" />
+      <workItem from="1586782459092" duration="5559000" />
+      <workItem from="1588434383092" duration="2513000" />
+      <workItem from="1589726189064" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary="新添加项目">
       <created>1576598628130</created>
@@ -627,11 +740,32 @@
       <option name="project" value="LOCAL" />
       <updated>1586704270829</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="socket实践">
+      <created>1586783027351</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1586783027351</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ignorList">
+      <created>1586783119990</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586783119990</updated>
+    </task>
+    <task id="LOCAL-00022" summary="nio的三个核心组件">
+      <created>1586785763987</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1586785763987</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122810000" />
+    <option name="totallyTimeSpent" value="130584000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,8 +780,8 @@
     <frame x="-8" y="-8" width="1296" height="696" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2439222" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49731663" visible="true" weight="0.11993517" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.50268334" side_tool="true" visible="true" weight="0.11993517" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -656,7 +790,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.45948136" weight="0.33989266" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.45948136" visible="true" weight="0.29516995" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.066189624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -666,7 +800,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.54051864" side_tool="true" weight="0.20572451" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.4141005" visible="true" weight="0.19677997" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4141005" weight="0.35420394" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32976827" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32976827" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3291592" />
@@ -778,54 +912,15 @@
     <MESSAGE value="定时任务" />
     <MESSAGE value="springBoot定时任务创建" />
     <MESSAGE value="socket实践" />
-    <option name="LAST_COMMIT_MESSAGE" value="socket实践" />
+    <MESSAGE value="ignorList" />
+    <MESSAGE value="nio的三个核心组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="nio的三个核心组件" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0e37e18b-22ff-4660-a049-2becd4f14c31/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MqTest/src/main/java/mysqlTest/service/OrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MqTest/src/main/java/mysqlTest/config/RabbitConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="53" column="23" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/.gitattributes" />
-    <entry file="file://$PROJECT_DIR$/demo/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" />
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/example/demo/SchedulerConfig.java" />
-    <entry file="file://$PROJECT_DIR$/demo/pom.xml" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9cc4c1d8-b378-4de4-a1ca-7e9ef23f9e84/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rootParent.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="21" selection-start-line="20" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MqTest/src/main/java/mysqlTest/entity/OrderSuccessMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1167,6 +1262,82 @@
     <entry file="file://$PROJECT_DIR$/bio/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/bio/service/BioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/NioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/nio/service/BasicBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/net/SocketAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/net/InetSocketAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/nio/channels/ServerSocketChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/sun/nio/ch/ServerSocketChannelImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bio/src/main/resources/note/nio的原理">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/nio/IntBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5819">
+          <caret line="278" column="25" selection-start-line="278" selection-start-column="23" selection-end-line="278" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/nio/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3473">
+          <caret line="179" column="2" selection-start-line="179" selection-start-column="2" selection-end-line="179" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/java11/lib/src.zip!/java.base/java/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8280">
@@ -1188,10 +1359,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/bid/service/BioService.java">
+    <entry file="file://$PROJECT_DIR$/bio/src/main/java/com/java/nio/source/ServerSocketChannelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="77" column="37" lean-forward="true" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state relative-caret-position="294">
+          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
