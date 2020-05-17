@@ -12,6 +12,7 @@
         <module name="pro" />
         <module name="mongo" />
         <module name="webflux" />
+        <module name="nio" />
         <module name="MqTest" />
       </profile>
     </annotationProcessing>

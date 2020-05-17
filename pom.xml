@@ -19,6 +19,7 @@
         <module>mysqlTest</module>
         <module>MySqlTest</module>
         <module>bio</module>
+        <module>nio</module>
     </modules>
     <dependencies>
         <dependency>
