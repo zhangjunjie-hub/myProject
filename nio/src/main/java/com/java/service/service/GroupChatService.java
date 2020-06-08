@@ -46,11 +46,11 @@ public class GroupChatService {
         try{
             while(true){
                 //获取到监听到的通道的数量
-                int count = selector.select(2000);
+                int count = selector.select();
                 //如果count大于零 说明有通道要处理
                 if(count >0){
                  //获取到要监听的channel对应的key
-                Set<SelectionKey> keys = selector.keys();
+                Set<SelectionKey> keys = selector.selectedKeys();
                 //迭代获取到的selectionKey集合
                 Iterator<SelectionKey> iterator = keys.iterator();
                 //循环遍历SelectionKey
@@ -71,10 +71,10 @@ public class GroupChatService {
                     if(key.isReadable()){
                     //处理专门的read方法
                         readInfo(key);
-                    //最后，手动从集合中删除已经处理过的SelectionKey，防止重复读取
-                        iterator.remove();
-                    }
 
+                    }
+                  //最后，手动从集合中删除已经处理过的SelectionKey，防止重复读取
+                    iterator.remove();
                 }
 
             }else{
@@ -129,8 +129,9 @@ public class GroupChatService {
             //通过selectionKey获取socketChannel
             Channel targetChannel = key.channel();
             //排除自己,既要保证获取的channel是socketChannel 还要保证不是自己(self)
-            if(targetChannel instanceof SocketChannel && targetChannel != self){
-             //讲channel转为SocketChannel
+            //if(targetChannel instanceof SocketChannel && targetChannel != self){
+            if(targetChannel instanceof SocketChannel){
+            //讲channel转为SocketChannel
                 SocketChannel dest =  (SocketChannel)targetChannel;
                 try{
                   //讲buffer中的数据写入到socketChannel中

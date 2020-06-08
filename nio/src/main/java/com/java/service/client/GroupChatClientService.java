@@ -29,7 +29,7 @@ public class GroupChatClientService {
             //创建选择器
             selector = Selector.open();
             //连接服务器
-            socketChannel = socketChannel.open(new InetSocketAddress(DynamicBean.COMMON_ADDRESS,DynamicBean.PORT));
+            socketChannel.open(new InetSocketAddress(DynamicBean.COMMON_ADDRESS,DynamicBean.PORT));
             //设置非阻塞
             socketChannel.configureBlocking(false);
             //将socketChannel注册到selector中，设置关注的事件为OP_READ事件
