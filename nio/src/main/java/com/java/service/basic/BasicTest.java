@@ -48,6 +48,8 @@ public class BasicTest {
        FileOutputStream out = new FileOutputStream(targetAddr);
        FileChannel targetChannel = out.getChannel();
        targetChannel.transferFrom(sourceChannel,0,sourceChannel.size());
+       targetChannel.close();
+       sourceChannel.close();
        in.close();
        out.close();
    }

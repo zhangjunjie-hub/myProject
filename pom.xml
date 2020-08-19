@@ -20,6 +20,7 @@
         <module>MySqlTest</module>
         <module>bio</module>
         <module>nio</module>
+        <module>springProject</module>
     </modules>
     <dependencies>
         <dependency>
