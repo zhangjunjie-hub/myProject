@@ -1,16 +1,13 @@
 package com.java.context;
 
 import com.java.bean.Person;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
+import org.springframework.stereotype.Controller;
 
 @Configuration
 @PropertySource({"classpath:/application.properties"})
-@Import({Person.class})
 @Lazy
-
+@ComponentScan(value = {"com.java"},excludeFilters = {@ComponentScan.Filter({Controller.class})})
 public class SpringConfiguration01 {
 
 }

@@ -5,12 +5,13 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 
 @Getter
 @Setter
 @ToString
-public class Person {
-//    @Value("#{100-98.6666}")
+@Scope("prototype")
+public class Person extends BaseObject {
     @Value("${person.name}")
  private String name;
     @Value("${person.address}")

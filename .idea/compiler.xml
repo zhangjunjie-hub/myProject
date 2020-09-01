@@ -11,10 +11,11 @@
         <module name="demo" />
         <module name="pro" />
         <module name="mongo" />
+        <module name="studentModel" />
         <module name="webflux" />
-        <module name="springProject" />
         <module name="nio" />
         <module name="MqTest" />
+        <module name="springProject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
