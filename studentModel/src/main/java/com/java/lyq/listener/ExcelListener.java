@@ -30,7 +30,10 @@ public class ExcelListener extends AnalysisEventListener<Student> {
     }
 
     private void saveData() {
-       studentService.insertStudent(datas);
+        //这个是新增操作
+        studentService.insertStudent(datas);
+        //根据学生姓名更新学生信息
+        //studentService.updateStudent(datas);
     }
 
     public List<Student> getDatas() {

@@ -22,10 +22,13 @@ public class StudentServiceImpl {
            }
     };
 
-
-
-
-
+    public void updateStudent(List<Student> students) {
+        if(!CollectionUtils.isEmpty(students)){
+            for (Student student: students) {
+                studentMapper.updateStudents(student);
+            }
+        }
+    }
 
 
 }

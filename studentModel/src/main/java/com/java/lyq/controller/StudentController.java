@@ -1,6 +1,5 @@
 package com.java.lyq.controller;
 
-import com.alibaba.druid.support.json.JSONUtils;
 import com.alibaba.excel.ExcelReader;
 import com.alibaba.excel.metadata.Sheet;
 import com.alibaba.fastjson.JSON;
@@ -46,7 +45,7 @@ public class StudentController implements ApplicationContextAware {
         }
         ExcelReader excelReader = new ExcelReader(in,null,excelListener);
         //读取信息
-        excelReader.read(new Sheet(1,3,Student.class));
+        excelReader.read(new Sheet(1,1,Student.class));
         return "保存成功";
     }
 

@@ -46,8 +46,9 @@ private HttpServletRequest request;
 // }
 // studentService.insertStudent(students);
 
-  controller.saveStudentsFromFile(request,"C:\\Users\\lenovo\\Desktop\\刘玉青\\一二班生活服务费身份证号码.xls");
-
+  //controller.saveStudentsFromFile(request,"C:\\Users\\lenovo\\Desktop\\刘玉青\\一二班生活服务费身份证号码.xls");
+  //C:\Users\lenovo\Desktop\\studentsInfos.xls
+  controller.saveStudentsFromFile(request,"C:\\Users\\lenovo\\Desktop\\studentsInfos.xls");
 
  }
 

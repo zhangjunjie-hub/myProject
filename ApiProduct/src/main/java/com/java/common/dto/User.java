@@ -1,14 +1,11 @@
-package com.java.lyq.dto;
+package com.java.common.dto;
 
 public class User extends BaseInfo {
     private String userId;
     private String userName;
     private String password;
     private String roleId;
-    /**
-     * 用户状态 0：有效 1：无效
-     */
-    private String status;
+    private String status;//用户状态 0：有效 1：无效
 
     public String getUserName() {
         return userName;

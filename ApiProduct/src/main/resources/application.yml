@@ -25,7 +25,7 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
   application:
-    name: serverModel
+    name: userApi
 #mybatis:
 #  # 指定全局配置文件位置
 #  config-location: classpath:mybatis/mybatis-config.xml
@@ -35,16 +35,17 @@ spring:
 #    schema:
 #      - classpath:sql/department.sql
 server:
-  port: 56919
+  port: 56929
+
 #      - classpath:sql/employee.sql
-thymeleaf:
-  cache: false
-  prefix: classpath:/templates
-  subfix: .html
-  mode: HTML
-  encoding: utf-8
-servlet:
-  context-type: text/html
+#thymeleaf:
+#  cache: false
+#  prefix: classpath:/templates
+#  subfix: .html
+#  mode: HTML
+#  encoding: utf-8
+#servlet:
+#  context-type: text/html
   #  cache:false
   #prefix:classpath:/templates
   #subfix:.html
@@ -52,11 +53,12 @@ servlet:
   #encoding: utf-8
     #servlet:
   #content-type:text/html
+
 eureka:
   instance:
     instance-id: ${spring.application.name}
   client:
-      register-with-eureka: true #是否将本服务注册到eureka中
-      fetch-registry: true #是否拉取服务信息
-      service-url:
-        defaultZone: http://localhost:6263/eureka/ #Eureka地址
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:6263/eureka/ #Eureka地址
