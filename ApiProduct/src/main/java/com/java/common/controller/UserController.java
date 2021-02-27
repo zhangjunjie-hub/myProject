@@ -57,6 +57,13 @@ public class UserController implements  UserControllerInterface {
     @RequestMapping(value = "findUserByInfo",method = RequestMethod.POST)
     @Override
     public User findUserByUserInfo(@RequestBody User user) {
+        try{
+            Thread.sleep(10000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
         return userService.findUserByUserInfos(user);
     }
 

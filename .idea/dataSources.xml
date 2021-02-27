@@ -15,5 +15,20 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="mysql" uuid="be6972ae-03b9-4f93-860a-e93e219c4d88">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>192.168.94.150</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.94.150:3306/lyq_student</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>
