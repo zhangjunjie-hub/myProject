@@ -1,15 +1,7 @@
 package com.rootProject;
 
-import com.dao.AppDao;
-import com.dao.AppDaoImpl;
 import com.scanpackage.ActuralApplication;
-import com.scanpackage.ClassScannerUtils;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.util.Assert;
-import org.springframework.web.context.support.XmlWebApplicationContext;
-
-import java.util.Iterator;
-import java.util.Set;
+import com.java.service.AppServiceImpl;
 
 /**
  * Hello world!
@@ -36,9 +28,9 @@ public class App
 //            System.out.println(iterator.next());
 //        }
 
-        ActuralApplication application = new ActuralApplication("com.dao");
-        AppDao appDao = (AppDao) application.getBean("appDaoImpl");
-        appDao.add();
+        ActuralApplication application = new ActuralApplication("com.java");
+        AppServiceImpl appService = (AppServiceImpl) application.getBean("appServiceImpl");
+        appService.add();
 
 
     }

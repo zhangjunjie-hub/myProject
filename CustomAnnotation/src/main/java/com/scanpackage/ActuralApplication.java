@@ -1,9 +1,13 @@
 package com.scanpackage;
 
 import com.EcltAnnotation.EctBeanAnnotation;
+import com.EcltAnnotation.EctResource;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.Assert;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Iterator;
 import java.util.Map;
@@ -63,12 +67,46 @@ public class ActuralApplication implements ApplicationInterface {
              initNomalBean(targetClass);
              //初始化带有自定义注解的bean
              initAnnotationBean(targetClass);
+             //之后是对注解修饰的字段进行解析
+             initAnnotationMethod();
              }
          }
      }else{
          throw new Exception("包下无对应的class文件");
      }
      }
+
+    /**
+     * 对注解修饰的属性进行封装
+      */
+    private void initAnnotationMethod() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
+        if(!application.isEmpty()){
+            Set<String> strings = application.keySet();
+            Iterator<String> iterator = strings.iterator();
+            while(iterator.hasNext()){
+                String shortName = iterator.next();
+                Object o = application.get(shortName);
+                Class<?> beanClass = o.getClass();
+                //先判断是否是抽象类
+                if(!isInterface(beanClass)){
+                    Field[] declaredFields = ( beanClass).getDeclaredFields();
+                    //然后判断对应的字段属性上是否有注解修饰
+                    for (Field field : declaredFields) {
+                        EctResource annotation = field.getAnnotation(EctResource.class);
+                        if(null != annotation){
+                            String fieldName = field.getName();
+                            //这个是要赋值的对象的实例
+                            Object targetClass = application.get(fieldName);
+                            //这个是设置可以为私有方法赋值
+                            field.setAccessible(true);
+                            //为属性设置对应的值
+                            field.set(o,targetClass);
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     /**
      * 这个是用来处理带有注解的类

@@ -1,4 +1,4 @@
-package com.dao;
+package com.java.dao;
 
 public interface AppDao {
      void add();

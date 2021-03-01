@@ -1,10 +1,10 @@
-package com.dao;
+package com.java.dao;
 
 public class AppDaoImpl implements AppDao {
 
 
     @Override
     public void add() {
-        System.out.println("add Method ……");
+        System.out.println("AppDao's  add Method ……");
     }
 }
