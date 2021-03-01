@@ -24,6 +24,7 @@
         <module>studentModel</module>
         <module>ApiProduct</module>
         <module>springBootEureka</module>
+        <module>CustomAnnotation</module>
     </modules>
 
     <parent>
